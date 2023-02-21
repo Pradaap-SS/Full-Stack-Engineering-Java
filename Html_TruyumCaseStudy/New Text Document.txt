@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Admin Home page</title>
+        <link rel = "stylesheet" href="style/style.css" type="text/css"/>
+        <script src="js/script.js"></script>
+        
+    </head>
+    <body>
+        <header>
+           <div id = "header-container">
+              <ul>
+                  <li><a href="#home">TruYum</a></li>
+                  <li><a href="adminHome.html">Menu</a></li>
+                  <li style="float: right"><a href="logoutAdmin.html">Logout</a></li>
+            </ul>
+           </div>
+       </header>
+        <div id = "section-container">
+            <h1>Menu Items</h1>
+            <div id = "tableContainer">
+                <table id = "menuTable">
+                    <script src="js/tablePopulator.js"></script>
+                </table>
+            </div>
+        </div>
+    </body>
+
+</html>

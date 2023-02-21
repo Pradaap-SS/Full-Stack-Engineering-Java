@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Customer Login Page</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/customerScript.js"></script>
+    </head>
+    <body>
+       <header>
+           <div id = "header-container">
+              <ul>
+                  <li><a href="#home">TruYum</a></li>
+            </ul>
+           </div>
+       </header>
+           
+           <div id = "section-container">
+               <h1>Customer Login</h1>
+               <div id = "form-container">
+                   <form id = "adminForm">
+                       <label for="adminId">Id:</label>
+                        <input type="text" id="id" name="id" placeholder="Enter Id">
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter Password">
+                       
+                        <input type="reset" value="Submit" onclick="credentialCheck()">
+                   </form>
+                   <div id = "result"></div>
+                   <h4>Are you an Admin? <a href="adminLogin.html">Click here</a></h4>
+               </div>
+           </div>
+            
+            
+       
+    </body>
+</html>
