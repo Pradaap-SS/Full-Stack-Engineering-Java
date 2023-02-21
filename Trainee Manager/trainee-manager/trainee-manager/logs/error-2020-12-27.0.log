@@ -1,0 +1,16 @@
+2020-12-27_14-25-56 [main] ERROR org.example.service.TraineeService - must be a well-formed email address
+2020-12-27_14-25-56 [main] ERROR org.example.service.TraineeService - Cohort aaadoes not present
+2020-12-27_15-27-53 [main] ERROR org.example.service.TraineeService - Invalid Cohort Name
+2020-12-27_16-03-34 [main] ERROR org.example.service.TraineeService - Employee Id should have 6 digits%nInvalid Cohort Name%nmust be a well-formed email address%n
+2020-12-27_16-04-14 [main] ERROR org.example.service.TraineeService - Text '2020-19-12' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 19
+2020-12-27_16-04-14 [main] ERROR org.example.service.TraineeService - Invalid Cohort Name
+must be a well-formed email address
+Invalid Employee Firstname
+Invalid Employee Lastname
+Employee Id should have 6 digits
+must not be null
+
+2020-12-27_16-55-32 [main] ERROR org.example.service.TraineeService - Employee Id should have 6 digits
+Invalid Cohort Name
+must be a well-formed email address
+

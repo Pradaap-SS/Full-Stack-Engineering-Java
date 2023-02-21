@@ -1,0 +1,11 @@
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\service\TraineeService.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\dao\TraineeDao.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\model\Trainee.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\util\ValidatorUtil.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\exeptions\InvalidTraineeOperationException.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\repository\TraineeRepo.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\Application.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\exeptions\InvalidTraineeDataException.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\dao\TraineeDaoImpl.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\model\Track.java
+D:\eclipse-worspace-advanced\trainee-manager\src\main\java\org\example\repository\TraineeRepoImpl.java

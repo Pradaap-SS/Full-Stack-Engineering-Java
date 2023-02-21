@@ -1,0 +1,7 @@
+2020-12-28_12-02-22 [main] ERROR org.example.Application - Trainee already exist in cohort AAA00AA00
+2020-12-28_12-02-22 [main] ERROR org.example.Application - Trainee Aiswarya R not present under cohort AAA00AA00
+2020-12-28_12-04-28 [main] ERROR org.example.Application - Trainee already exist in cohort AAA00AA00
+2020-12-28_12-07-17 [main] ERROR org.example.Application - Trainee already exist in cohort AAA00AA00
+2020-12-28_12-07-17 [main] ERROR org.example.Application - No trainees in this cohort
+2020-12-28_12-10-47 [main] ERROR org.example.Application - Employee Id should have 6 digits
+

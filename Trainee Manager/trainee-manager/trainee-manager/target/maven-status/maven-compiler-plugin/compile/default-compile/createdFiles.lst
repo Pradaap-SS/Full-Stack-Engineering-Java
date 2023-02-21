@@ -1,0 +1,11 @@
+org\example\dao\TraineeDao.class
+org\example\repository\TraineeRepo.class
+org\example\exeptions\InvalidTraineeDataException.class
+org\example\Application.class
+org\example\exeptions\InvalidTraineeOperationException.class
+org\example\dao\TraineeDaoImpl.class
+org\example\service\TraineeService.class
+org\example\repository\TraineeRepoImpl.class
+org\example\model\Track.class
+org\example\util\ValidatorUtil.class
+org\example\model\Trainee.class

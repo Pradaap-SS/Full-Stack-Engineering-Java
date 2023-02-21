@@ -1,0 +1,86 @@
+2020-12-28_12-00-43 [main] INFO  org.example.Application - Trainee Registered...
+2020-12-28_12-00-43 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-00-43 [main] INFO  org.example.Application - Terminating Application ..
+2020-12-28_12-02-22 [main] INFO  org.example.Application - Trainee Registered...
+2020-12-28_12-02-22 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-02-22 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-02-22 [main] INFO  org.example.Application - Trainee Registered...
+2020-12-28_12-02-22 [main] INFO  org.example.Application - Terminating Application ..
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Registering trainee...
+2020-12-28_12-04-28 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-04-28 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-04-28 [main] INFO  org.example.Application - Terminating Application ..
+2020-12-28_12-07-17 [main] INFO  org.example.Application - Registering trainee...
+2020-12-28_12-07-17 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-07-17 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |               R | Aiswarya@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-07-17 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-07-17 [main] INFO  org.example.Application - Removing Trainee ...
+2020-12-28_12-07-17 [main] INFO  org.example.Application - Terminating Application ..
+2020-12-28_12-10-47 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-28_12-10-47 [main] INFO  org.example.Application - Terminating Application ..
+2020-12-28_12-12-42 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-28_12-12-56 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-28_12-23-49 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-24-39 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-24-39 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-25-43 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-25-43 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-25-43 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-28_12-29-29 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-29-29 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-29-43 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-29-43 [main] INFO  org.example.Application - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |        Aiswarya |       Ravikumar |  Asyh@gmail.com |            JAVA |    05 September 2020 |
+
+2020-12-28_12-29-43 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final

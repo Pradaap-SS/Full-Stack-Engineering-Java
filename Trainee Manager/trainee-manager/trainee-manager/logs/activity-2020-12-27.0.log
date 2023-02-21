@@ -1,0 +1,152 @@
+2020-12-27_14-25-56 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_14-25-56 [main] INFO  org.example.service.TraineeService - Terminating Application ..
+2020-12-27_14-28-25 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_14-28-25 [main] INFO  org.example.service.TraineeService - Terminating Application ..
+2020-12-27_15-27-53 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_15-30-03 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_15-30-03 [main] INFO  org.example.service.TraineeService - Valid Detail
+2020-12-27_15-33-13 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_15-33-13 [main] INFO  org.example.service.TraineeService - Valid Detail
+2020-12-27_16-02-20 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-03-34 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-04-14 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-21-19 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-21-19 [main] INFO  org.example.service.TraineeService - Valid Detail
+2020-12-27_16-30-55 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter trainee Employee iD : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter The cohort : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter trainee first name : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter trainee last name : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter trainee email : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter track (java, dotnet, python) : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter date of join : 
+2020-12-27_16-36-37 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Valid Detail
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - Enter The cohort : 
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - | Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |             AAA |             BBB |     AAA@AAA.AAA |            JAVA |    15 September 2020 |
+
+2020-12-27_16-36-37 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter trainee Employee iD : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter The cohort : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter trainee first name : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter trainee last name : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter trainee email : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter track (java, dotnet, python) : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter date of join : 
+2020-12-27_16-40-56 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Valid Detail
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - Enter The cohort : 
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - 
+| Emp Id |          Cohort |      First Name |       Last Name |           Email |           Track |         Date of Join |
+| 877998 |       AAA00AA00 |             AAA |             BBB |     AAA@AAA.AAA |            JAVA |     12 December 2020 |
+
+2020-12-27_16-40-56 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-55-18 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter trainee Employee iD : 
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter the cohort : 
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter trainee first name : 
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter trainee last name : 
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter trainee email : 
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter track (java, dotnet, python) : 
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - Enter date of join : 
+2020-12-27_16-55-32 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_16-55-32 [main] INFO  org.example.service.TraineeService - 
+________________________________________
+Choose your options
+ a. Register a Trainee
+ b. Remove a Trainee
+ c. Find a trainee by full Name
+ d. Find all trainees under a cohort
+ e. Exit
+________________________________________
+
+2020-12-27_16-59-44 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-00-14 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-00-19 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-03-23 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-14-59 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-15-43 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-16-06 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-22-35 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-24-07 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-25-33 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-25-59 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
+2020-12-27_17-26-04 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.11.Final
