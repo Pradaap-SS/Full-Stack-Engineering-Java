@@ -1,0 +1,159 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.*;
+import java.util.Properties;
+
+public class DBHandler {
+    
+	public Connection establishConnection() 
+	{
+		Connection connection = null;
+		Properties properties = new Properties();
+		 try{
+			
+			FileInputStream fileInputStream = new FileInputStream("db.properties");
+			properties.load(fileInputStream);
+			Class.forName(properties.getProperty("db.classname"));
+			String url = properties.getProperty("db.url");
+			String username = properties.getProperty("db.username");
+			String password = properties.getProperty("db.password");
+			
+			connection = DriverManager.getConnection(url, username, password);
+			fileInputStream.close();
+	    }
+	    catch(IOException e){
+	    	e.printStackTrace();
+	    } catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return connection;	
+		
+	}
+}
+
+//Write the required business logic as expected in the question description
+	public void calculateBillAmount()
+    {
+    	//fill the code here
+		double billAmt = 0;
+		if(unitsConsumed<=100) {
+			billAmt = 0;
+		}else if(unitsConsumed>100 && unitsConsumed<=300) {
+			billAmt = (unitsConsumed-100)*1.5;
+		}else if(unitsConsumed>300 && unitsConsumed<=600) {
+			billAmt = ((unitsConsumed-300)*3.5) + (200*1.5);
+		}else if(unitsConsumed>600 && unitsConsumed<=1000) {
+			billAmt = ((unitsConsumed-600)*5.5) + (200*1.5) + (300*3.5);
+		}else if(unitsConsumed>1000)  {
+			billAmt = ((unitsConsumed-1000)*7.5) + (200*1.5) + (300*3.5) + (400*5.5);
+		}
+		setBillAmount(billAmt);
+    }
+
+import java.io.File;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.*;
+public class ElectricityBoard
+{
+  
+    
+    //write the required business logic methods as expected in the question description
+    
+    public void addBill(List<ElectricityBill> billList)
+    {
+        //fill your code here
+    	
+		try {
+			DBHandler dbHandler = new DBHandler();
+	    	Connection connection = dbHandler.establishConnection();
+	    	String query = "insert into ElectricityBill values(?,?,?,?,?)";
+			
+			for(ElectricityBill bill : billList) {
+				PreparedStatement ps = connection.prepareStatement(query);
+				ps.setString(1, bill.getConsumerNumber());
+				ps.setString(2, bill.getConsumerName());
+				ps.setString(3, bill.getConsumerAddress());
+				ps.setInt(4, bill.getUnitsConsumed());
+				ps.setDouble(5, bill.getBillAmount());
+				ps.executeUpdate();
+//				ps.close();
+	    	}
+			connection.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+
+    }
+    
+    public List<ElectricityBill> generateBill(String filePath) 
+    {
+        //fill your code here
+    	List<ElectricityBill> electricityBillList = null; 
+		Scanner sc = null;
+		try{
+			sc = new Scanner(new File(filePath));
+			electricityBillList =  new ArrayList<ElectricityBill>();
+			
+            while (sc.hasNextLine()) {
+            	String total = sc.nextLine();
+                String[] segments = total.trim().split(",");
+                ElectricityBill bill = null;
+                try {
+                	
+                	 if(validate(segments[0])) {
+                		 
+	            		bill = new ElectricityBill();
+	            		bill.setConsumerNumber(segments[0]);
+	            		bill.setConsumerName(segments[1]);
+	            		bill.setConsumerAddress(segments[2]);
+	            		bill.setUnitsConsumed(Integer.parseInt(segments[3]));
+                 		bill.calculateBillAmount();
+                     	electricityBillList.add(bill);
+                     }
+                }catch(InvalidConsumerNumberException ex) {
+                	ex.printStackTrace();
+                }
+            }
+            
+        }
+        catch (IOException io){
+        	io.printStackTrace();
+        }finally {
+        	sc.close();
+        }
+		return electricityBillList;
+    }
+    public boolean validate(String consumerNumber) throws InvalidConsumerNumberException
+	{
+    		//fill your code here
+	    	boolean valid = consumerNumber.matches("[0]{1}[0-9]{9}");
+			if(!valid) {
+				throw new InvalidConsumerNumberException("Invalid Consumer Number");
+			}
+			return valid;
+
+	}
+
+    
+}
+
+//make the required changes to this class so that InvalidConsumerNumberException is of type exception. 
+public class InvalidConsumerNumberException extends Exception
+{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	//fill the code
+	public InvalidConsumerNumberException(String msg) {
+		super(msg);
+	}
+}
