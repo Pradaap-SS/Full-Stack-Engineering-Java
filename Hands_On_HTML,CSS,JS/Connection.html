@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            ACTB Connection Portal
+        </title>
+        
+        <style>
+            body{
+                background-color: #EED426;
+            }
+            h1{
+                color: #006666;
+                font-family: Verdana;
+                text-align: center;
+            }
+            .table1{
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+            #rentalcost{
+                border-style: solid;
+                border-width: 1px;
+                float: right;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ACTB Connection Portal</h1>
+        
+        <form onsubmit="return calculateBill()" >
+            
+        
+        <table class="table1">
+            <!--Customer Name-->
+            <tr>
+                <td>Customer Name</td>
+                <td>
+                    <input type="text" name="custname" id="custname" placeholder="Enter the customer name" required="required" />
+                </td>
+                
+            </tr>
+            
+            <!--Customer Email-->
+            <tr>
+                <td>Customer Email</td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="abc@gmail.com" required="required" />
+                </td>
+                
+            </tr>
+            
+            <!--Telephone/ Mobile Number-->
+            <tr>
+                <td>Telephone/ Mobile Number</td>
+                <td>
+                    <input type="text" name="mobile" id="mobile" pattern="[987][0-9]{9}" maxlength="10" minlength="10" placeholder="Enter the Mobile Number" required="required" />
+                </td>
+                
+            </tr>
+            
+            <!--Connection Type-->
+            <tr>
+                <td>Connection Type</td>
+                <td>
+                    <select id="connectiontype" name="conntype" required="required">
+                        <option value="Pre" id="Pre">Pre</option>
+                        <option value="Post" id="Post">Post</option>
+                    </select>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td>Scheme Name</td>
+                <td>
+                    <input type="radio" id="scheme1" name="scheme" value="Local" required="required" />Local
+                    <input type="radio" id="scheme2" name="scheme" value="STD" required="required" />STD
+                    <input type="radio" id="scheme3" name="scheme" value="FullTalkTime" required="required" />FullTalkTime
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td>Connection Duration</td>
+                <td>
+                    <input type="number" name="duration" id="duration" min="1" max="12" required="required" />
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="submit" name="submit" id="submit" value="Connection Bill Amount" />
+                </td>
+                <td>
+                    <input type="reset" name="clear" id="clear" value="Reset" />
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="result" name="result"></div>
+                </td>
+            </tr>
+        </table>
+        
+        <table id="rentalcost">
+            <caption>Rental Cost Table</caption>
+            <tr>
+                <th>Connection Type</th>
+                <th>Call Limit</th>
+                <th>Monthly Rental</th>
+            </tr>
+            <tr>
+                <td>Pre</td>
+                <td>500</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>Post</td>
+                <td>Unlimited</td>
+                <td>150</td>
+            </tr>
+            
+        </table>
+        </form>
+        
+        <script>
+        function calculateBill(){
+            
+            //div with name result
+            var result = document.getElementById("result");
+            
+            //duration
+            var duration = parseInt(document.getElementsByName("duration")[0].value);
+            
+            
+            //cost per month
+            
+            
+            
+            var cost = 0;
+            
+            //local = 200;
+            //ssd = 350;
+            //fulltalktime = 500;
+            
+            /*
+            var scheme = document.getElementsByName("scheme");
+            if(scheme[0].checked == true){
+                cost = 200;
+            }
+            else if(scheme[1].checked == true){
+                cost = 350;
+            }
+            else if(scheme[2].checked == true){
+                cost = 500;
+            }
+            else{
+                cost = 0;
+            }
+            */
+            
+            var scheme1 = document.getElementById("scheme1");
+            if(scheme1.checked == true){
+                cost = 200;
+            }
+            var scheme2 = document.getElementById("scheme2");
+            if(scheme2.checked == true){
+                cost = 350;
+            }
+            var scheme3 = document.getElementById("scheme3");
+            if(scheme3.checked == true){
+                cost = 500;
+            }
+            
+            
+            
+            //monthly rental
+            //monthlyRentalPre = 75;
+            //monthlyRentalPost = 150;
+            
+            
+            var rental = 0;
+            var connectiontype = document.getElementsByName("conntype")[0].value;
+            if(connectiontype == "Pre"){
+                rental = 75;
+            }
+            else if(connectiontype == "Post"){
+                rental = 150;
+            }
+            else{
+                rental=0
+            }
+            /*
+            
+            */
+            
+            /*
+            if(connectiontype == "Pre"){
+                rental = 75;
+            }
+            if(connectiontype == "Post"){
+                rental = 150;
+            }
+            
+            
+            var pre = document.getElementById("Pre");
+            if(pre.selected == true){
+                cost = 500;
+            }
+            
+            var post = document.getElementById("scheme3");
+            if(scheme3.checked == true){
+                cost = 500;
+            }
+            */
+            //Total Monthly Rental Cost =  ( duration * Cost per month ) + Monthly Rental
+            var total = (duration * cost) + rental;
+            
+            
+            var msg = "The Total Monthly Rental Cost is Rs. " + total;
+            result.innerHTML = msg;
+            
+            //console.log(duration);
+            //console.log(typeof duration);
+            
+            //console.log(scheme);
+            //console.log(typeof scheme);
+            
+            //console.log(connectiontype);
+            //console.log(typeof connectiontype);
+            
+            //console.log(total);
+            
+            return false;
+            
+            
+        }
+            
+        </script>
+    </body>
+</html>
