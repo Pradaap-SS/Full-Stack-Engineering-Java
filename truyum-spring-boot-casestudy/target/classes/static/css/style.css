@@ -1,0 +1,411 @@
+:root{
+    --section-color: #E7E9F0;
+    --header-color: #051747;
+    --color1: #535f80;
+    --color2: #FEFEFE;
+    
+}
+body{
+    font-family: 'Peddana', serif;
+    background-color: var(--section-color);
+    
+    
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: var(--header-color);
+    margin: 0;
+    
+    
+    height: 50px;
+    width: 100%;
+}
+#logo{
+ 
+    padding: 5px 20px;
+    float: left;
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    
+    
+}
+
+#logo-img img{
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+#nav{
+ 
+    padding: 10px 20px;
+    float: right;
+}
+
+#nav a{
+    color: white;
+    font-size: 24px;
+    
+    
+}
+
+section{
+    
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    position: relative;
+    clear: both;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: var(--header-color);
+    margin: 0;
+    
+    
+    height: 20px;
+    width: 100%;
+    padding: 10px 20px 30px 20px;
+    
+    color: var(--color2);
+    font-size: 24px;
+}
+
+/* Main container*/
+.main-container{
+    
+    width: 80%;
+    
+    padding: 20px;
+
+    position: relative;
+    top: 50px;
+    height: 90%;
+    margin-top: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login container*/
+.login-container{
+
+    background-color: var(--color1);
+    width: 60%;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    display: block;
+    position: relative;
+
+}
+.login-container input{
+    width: 90%;
+    display: block;
+    
+    height: 30px;
+    padding: 10px;
+    color: var(--header-color);
+    margin: 10px auto;
+    outline: none;
+}
+
+.login-container button{
+    height: 50px;
+    width: 60%;
+    color: var(--header-color);
+    background-color:rgb(164, 190, 206);
+    margin-top: 40px;
+    margin-left: 150px;
+    cursor: pointer;
+    font-size: 28px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+.login-container button:hover{
+    border: 2px var(--header-color) solid;
+    border-radius: 5px;
+    color: var(--header-color);
+    background-color:white;
+    box-shadow: 0px 6px gray;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+.check{
+    display: inline;
+    font-size: 24px;
+    width: 100%;
+
+}
+.check input[type=checkbox]{
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    width: 10%;
+
+}
+.check p{
+    width: 70%;
+}
+
+.login-container h1{
+
+     color: white;
+     padding-left: 30px;
+     text-decoration: underline;
+}
+.modal-container{
+    height: 100%;
+    width: 100%;
+    background-color: #051747;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    height: 350px;
+    width: 60%;
+    background-color: var(--color1);
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+.modal-container input{
+    width: 90%;
+    display: block;
+    
+    height: 30px;
+    padding: 10px;
+    color: var(--header-color);
+    margin: 10px auto;
+}
+
+.modal-container input[type=submit]{
+    height: 50px;
+    color: var(--header-color);
+    background-color: rgb(144, 247, 161);
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 28px;
+    padding-bottom: 20px;
+    border: none;
+
+
+}
+
+.modal-container input[type=submit]:hover{
+    border: 2px var(--header-color) solid;
+    color: var(--header-color);
+    background-color:white;
+    box-shadow: 0px 6px gray;
+    cursor: pointer;
+
+}
+
+.close-btn{
+    text-align: right;
+    font-size: 28px;
+    font-weight: 28px;
+    color: #E7E9F0;
+    cursor: pointer;
+
+}
+
+
+.table-container{
+    width: 100%;
+    
+}
+
+.table-style{
+    width: 100%;
+    padding: 10px;
+    
+
+}
+table thead tr:nth-child(1) {
+    background: var(--header-color);
+    color: var(--color2);
+    font-size: 20px;
+}
+table thead tr:hover:nth-child(1) {
+    background: darkblue;
+    color: var(--color2);
+    font-size: 20px;
+}
+.table-style td:hover{
+    background-color: var(--color1);
+    font-weight: bolder;
+    color: white;
+
+    
+}
+.table-style tr:hover{
+    background-color: #EBECF0;
+    font-weight: bolder;
+      
+    
+}
+
+.table-style button{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+.modal-container-2{
+    height: 100%;
+    width: 100%;
+    background-color: #051747;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.modal-content-2{
+    height: 650px;
+    width: 60%;
+    background-color: var(--color1);
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+.modal-container-2 input{
+    width: 90%;
+    display: block;
+    
+    height: 30px;
+    padding: 10px;
+    color: var(--header-color);
+    margin: 10px auto;
+}
+
+.modal-container-2 input[type=submit]{
+    height: 50px;
+    color: var(--header-color);
+    background-color: rgb(144, 247, 161);
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 28px;
+    padding-bottom: 20px;
+    border: none;
+
+
+}
+
+.modal-container-2 input[type=submit]:hover{
+    border: 2px var(--header-color) solid;
+    color: var(--header-color);
+    background-color:white;
+    box-shadow: 0px 6px gray;
+    cursor: pointer;
+
+}
+
+.close-btn-2{
+    text-align: right;
+    font-size: 28px;
+    font-weight: 28px;
+    color: #E7E9F0;
+    cursor: pointer;
+
+}
+
+#msgHere{
+    font-size: 28px;
+    clear: both;
+    padding: 20px;
+
+}
+#msgHere2{
+    font-size: 28px;
+    clear: both;
+    padding: 20px;
+
+}
+
+.text-warning {
+	color: red;
+	font-weight: bolder;
+	font-style: italic;
+}
+.update-table {
+
+  border: 1px solid black;
+  background-color: white;
+  font-size: 20px;
+  width: 100%;
+  padding: 15px 35px 20px 35px;
+
+}
+.update-btn {
+	background-color: green;
+	color: white;
+	outline: none;
+	border: none;
+	height: 30px;
+	width: 70px;
+	
+}
+
+.update-btn:hover {
+	background-color: green;
+	color: white;
+	outline: none;
+	border: none;
+	cursor:pointer;
+	
+}
+
+.edit-status {
+	text-align: left;
+}
