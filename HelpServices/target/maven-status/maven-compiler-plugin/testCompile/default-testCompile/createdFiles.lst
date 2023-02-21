@@ -1,0 +1,12 @@
+com\example\demo\Feature.class
+com\example\demo\TestApp.class
+com\example\demo\TestAnnotation.class
+com\example\demo\ClassDefinition.class
+com\example\demo\SpringTest.class
+com\example\demo\TestMethod.class
+com\example\demo\WebTest.class
+com\example\demo\FeatureTest.class
+com\example\demo\TestConstructor.class
+com\example\demo\TestField.class
+com\example\demo\HelpServicesApplicationTests.class
+com\example\demo\TestAnnotationAttribute.class
