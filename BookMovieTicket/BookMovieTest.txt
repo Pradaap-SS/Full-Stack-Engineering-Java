@@ -1,0 +1,179 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.junit.Before;
+import org.junit.FixMethodOrder;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class BookAMovieTest {
+
+	static BookAMovie bookAMovie;
+	
+	@Before
+	public void setUp() throws Exception {
+		bookAMovie = new BookAMovie();
+		List<MovieTicket> movieTicketList = new ArrayList<>();
+		MovieTicket m1 = new MovieTicket(100, "a", 10, 2, "king", LocalDate.parse("2020-02-12"));
+		MovieTicket m2 = new MovieTicket(101, "a", 10, 4, "king", LocalDate.parse("2020-06-12"));
+		MovieTicket m3 = new MovieTicket(102, "c", 13, 5, "king", LocalDate.parse("2020-08-02"));
+		MovieTicket m4 = new MovieTicket(103, "d", 14, 6, "king", LocalDate.parse("2020-06-06"));
+		movieTicketList.add(m1);
+		movieTicketList.add(m2);
+		movieTicketList.add(m3);
+		movieTicketList.add(m4);
+		bookAMovie.setMovieTicketList(movieTicketList);
+		// Try to create few MovieTicket objects and add to a list.
+		// Set that list to movieTicketList in BookAMovie using setMovieTicketList
+		// method
+
+	}
+
+	@Test
+	public void test11ValidateCircleWhenKing() throws InvalidMovieTicketException {
+
+		// test the validateCircle method when a valid circle “king” is provided
+		assertTrue(bookAMovie.validateCircle("king"));
+
+	}
+
+	@Test
+	public void test12ValidateCircleWhenQueen() throws InvalidMovieTicketException {
+
+		// test the validateCircle method when a valid circle “queen” is provided.
+		assertTrue(bookAMovie.validateCircle("queen"));
+	}
+
+	@Test
+	public void test13ValidateCircleWhenInvalid() {
+
+		// test the validateCircle method when an invalid circle is passed to this
+		// method
+		boolean res = false;
+		try {
+			res = bookAMovie.validateCircle("kisdng");
+		} catch (InvalidMovieTicketException e) {
+			res = true;
+		}
+		assertTrue(res);
+	}
+
+	@Test
+	public void test14AddMovieTicketForValidCircle() {
+
+		// test the addMovieTicket method when valid circle is provided for the
+		// MovieTicket
+		boolean result = true;
+		try {
+			result = bookAMovie.addMovieTicket(100, "a", 10, 2, "king", LocalDate.parse("2020-02-12"));
+		} catch (InvalidMovieTicketException e) {
+			// TODO Auto-generated catch block
+			result = false;
+		}
+		assertTrue(result);
+	}
+
+	@Test
+	public void test15AddMovieTicketForInvalidCircle() {
+
+		// test the addMovieTicket method when invalid circle is provided for the
+		// MovieTicket
+		boolean result = true;
+		try {
+			result = bookAMovie.addMovieTicket(100, "a", 10, 2, "kifng", LocalDate.parse("2020-02-12"));
+		} catch (InvalidMovieTicketException e) {
+			// TODO Auto-generated catch block
+			result = false;
+		}
+		assertFalse(result);
+	}
+
+	@Test
+	public void test16ViewMovieTicketByIdForValidId() throws InvalidMovieTicketException {
+
+		// test the viewMovieTicketById method when a ticketId is passed as parameter
+		// exists in
+		// the movieTicketList
+		MovieTicket movieTicket = bookAMovie.viewMovieTicketById(100);
+		assertEquals(100, movieTicket.getTicketId());
+
+	}
+
+	@Test
+	public void test17ViewMovieTicketByIdForInvalidId() {
+
+		// test the viewMovieTicketById method when a ticketId is passed as parameter
+		// does not exist in the movieTicketList
+		boolean res = true;
+		try {
+			MovieTicket movieTicket = bookAMovie.viewMovieTicketById(1100);
+		} catch (InvalidMovieTicketException e) {
+			// TODO Auto-generated catch block
+			res = true;
+		}
+		assertTrue(res);
+
+	}
+
+	@Test
+	public void test18ViewMovieTicketByScreen() {
+
+		// test the viewMovieTicketByScreen method
+		List<MovieTicket> temp = new ArrayList<MovieTicket>();
+		temp = bookAMovie.viewMovieTicketByScreen(10);
+		int size = temp.size();
+		assertEquals(size, 2);
+
+	}
+
+	@Test
+	public void test19VewTicketsMovieWise() {
+
+		// test the viewTicketsMovieWise method
+		Map<String, List<MovieTicket>> temp = new LinkedHashMap<String, List<MovieTicket>>();
+		temp = bookAMovie.viewTicketsMovieWise();
+		List<MovieTicket> temp1 = new ArrayList<>();
+		List<MovieTicket> temp2 = new ArrayList<>();
+		List<MovieTicket> temp3 = new ArrayList<>();
+
+		for (Entry<String, List<MovieTicket>> e : temp.entrySet()) {
+			if (e.getKey().contentEquals("a")) {
+				temp1 = e.getValue();
+			}
+			if (e.getKey().contentEquals("c")) {
+				temp2 = e.getValue();
+			}
+			if (e.getKey().contentEquals("d")) {
+				temp3 = e.getValue();
+			}
+
+		}
+		assertEquals(temp1.size(), 2);
+		assertEquals(temp2.size(), 1);
+		assertEquals(temp3.size(), 1);
+
+	}
+
+	@Test
+	public void test20ViewScreenWiseTotalSeatsBooked() {
+
+		// test the viewScreenWiseTotalSeatsBooked method
+		Map<Integer, Integer> temp = new LinkedHashMap<Integer, Integer>();
+		temp = bookAMovie.viewScreenWiseTotalSeatsBooked(LocalDate.parse("2020-02-12"), LocalDate.parse("2020-06-12"));
+		int x = temp.get(10);
+		assertEquals(x, 6);
+
+	}
+
+}
