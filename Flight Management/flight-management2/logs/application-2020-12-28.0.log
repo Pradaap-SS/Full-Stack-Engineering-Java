@@ -1,0 +1,44 @@
+Mon 13:49:32 28/12/2020 [restartedMain] INFO  c.d.f.m.FlightManagementApplication -
+				Starting FlightManagementApplication on LAPTOP-TL7JGJU3 with PID 16076 (C:\Users\Vishnu\eclipse-workspace\flight-management2\target\classes started by Vishnu in C:\Users\Vishnu\eclipse-workspace\flight-management2)
+Mon 13:49:32 28/12/2020 [restartedMain] INFO  c.d.f.m.FlightManagementApplication -
+				No active profile set, falling back to default profiles: default
+Mon 13:49:33 28/12/2020 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+				Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Mon 13:49:33 28/12/2020 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+				For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Mon 13:49:53 28/12/2020 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8080 (http)
+Mon 13:49:53 28/12/2020 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8080"]
+Mon 13:49:53 28/12/2020 [restartedMain] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+Mon 13:49:53 28/12/2020 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.39]
+Mon 13:49:53 28/12/2020 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+Mon 13:49:53 28/12/2020 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 19987 ms
+Mon 13:49:54 28/12/2020 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor -
+				Initializing ExecutorService 'applicationTaskExecutor'
+Mon 13:49:54 28/12/2020 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+Mon 13:49:54 28/12/2020 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8080"]
+Mon 13:49:55 28/12/2020 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8080 (http) with context path ''
+Mon 13:49:55 28/12/2020 [restartedMain] INFO  c.d.f.m.FlightManagementApplication -
+				Started FlightManagementApplication in 30.452 seconds (JVM running for 62.785)
+Mon 13:50:10 28/12/2020 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+Mon 13:50:11 28/12/2020 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+Mon 13:50:11 28/12/2020 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				Completed initialization in 209 ms
+Mon 13:50:11 28/12/2020 [http-nio-8080-exec-1] INFO  c.d.f.m.controllers.FlightResource -
+				Booking function for Economy Flight starts here..!!
+Mon 13:50:11 28/12/2020 [http-nio-8080-exec-1] INFO  c.d.f.m.controllers.FlightResource -
+				Booking function for Economy Flight ends here..!!
+Mon 13:53:00 28/12/2020 [http-nio-8080-exec-9] INFO  c.d.f.m.controllers.FlightResource -
+				Booking function for Business Flight starts here..!!
+Mon 13:53:00 28/12/2020 [http-nio-8080-exec-9] INFO  c.d.f.m.controllers.FlightResource -
+				Booking function for Business Flight ends here..!!
